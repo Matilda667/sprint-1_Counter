@@ -1,4 +1,4 @@
-# IT-INCUBATOR Todolist Project
+# IT-INCUBATOR Counter Project
 
 ## React + TypeScript + Vite
 
