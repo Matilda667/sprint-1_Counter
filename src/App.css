@@ -16,35 +16,36 @@ body {
 }
 
 .App {
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #1e1e1e;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e24;
+    color: #00bcd4;
+    font-family: Arial, sans-serif;
 }
 
-.counter-container {
-    background-color: #2a2a2a;
-    padding: 30px;
+.main-container {
+    display: flex;
+    gap: 40px;
+}
+
+.settings, .counter-container {
+    border: 2px solid #00bcd4;
+    padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 220px;
     text-align: center;
-    color: #000;
-    border: 2px solid #00bfff;
-    margin: 100px auto;
+    background-color: #2c2c36;
 }
 
 .display {
-    background-color: #2a2a2a; /* тёмная подложка */
-    color: #00bfff; /* цифра — голубая */
-    font-size: 60px;
-    font-weight: bold;
-    padding: 20px 40px;
-    border-radius: 12px;
+    font-size: 20px;
     margin-bottom: 20px;
-    border: 2px solid #00bfff;
-    box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
-    transition: color 0.3s, border 0.3s;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Красная цифра при достижении 5 */
@@ -78,4 +79,12 @@ button:disabled {
     background-color: #444;
     color: #999;
     cursor: not-allowed;
+}
+
+.input-box {
+    margin: 10px 0;
+}
+
+label {
+    margin-right: 5px;
 }
